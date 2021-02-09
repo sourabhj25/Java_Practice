@@ -1,0 +1,44 @@
+<div class="section" style="margin-top: -20px;">
+    <div class="container top-nav">
+      <label class="heading-top">Payment Gateway</label>
+    </div>
+  </div>
+  
+  <div class="row" style="margin-top:50px;">
+    <div class="col-lg-12">
+
+        <div class="col-lg-4"></div>
+
+            <div class="col-lg-3">
+                <div class="loginForm">    
+                    <form (ngSubmit)="payment(name.value ,email.value)">                      
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Name</label>
+                                        <input type="email" #name class="form-control"  aria-describedby="emailHelp" placeholder="Enter name">
+                                </div>
+                             </div>                      
+                     
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" #email class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                             </div>
+                        <button type="submit" class="btn btn-primary">Payment</button>
+                    </form>
+                </div>
+            </div>
+<!-- 
+        <div class="col-lg-4" *ngIf="message" >
+          <div id="divSmallBoxes">
+              <div id="smallbox4" class="SmallBox animated fadeInRight fast" style="background-color: rgb(115, 158, 115);padding: 20px;height: 90px;">
+                  <div class="textoFull"><span style="color:white;font-size: 20px;">Success!</span>
+                    <p style="color:white">{{alert}}</p></div>
+                 
+                  </div>
+              </div>
+        </div> -->
+    </div>
+  </div> 
+  

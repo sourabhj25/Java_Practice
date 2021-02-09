@@ -1,0 +1,41 @@
+.section {
+    height: 100px;
+    background: #ededed;
+}
+
+.sell-nav .top-nav.container {
+    width: 980px;
+}
+
+.sell-nav .top-nav {
+    background-image: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    overflow: visible;
+    position: relative;
+}
+
+.heading-top {
+    padding-top: 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.primary-button {
+    background: #e0336b;
+    border: 1px solid #e0336b;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+
+.tbl {
+    padding-top: 25px;
+}
+
+#divSmallBoxes {
+    position: fixed;
+    right: 10px;
+    top: 52px;
+    z-index: 9999;
+    display: none
+}

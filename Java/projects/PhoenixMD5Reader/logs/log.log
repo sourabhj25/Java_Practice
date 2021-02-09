@@ -1,0 +1,255 @@
+30-11-2017 14:15:49.688 [main] INFO  c.p.m.PhoenixMd5ReaderApplication.logStarting - Starting PhoenixMd5ReaderApplication on ags-d-130 with PID 31130 (/home/ags/Documents/Vishal/Workspace/PhoenixMD5Reader/target/classes started by ags in /home/ags/Documents/Vishal/Workspace/PhoenixMD5Reader)
+30-11-2017 14:15:49.699 [main] INFO  c.p.m.PhoenixMd5ReaderApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+30-11-2017 14:15:49.786 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@778d1062: startup date [Thu Nov 30 14:15:49 IST 2017]; root of context hierarchy
+30-11-2017 14:15:52.151 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$b4a4b628] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+30-11-2017 14:15:52.193 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+30-11-2017 14:15:52.241 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$100cf129] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+30-11-2017 14:15:52.960 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+30-11-2017 14:15:52.977 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+30-11-2017 14:15:52.979 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+30-11-2017 14:15:53.159 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+30-11-2017 14:15:53.160 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 3378 ms
+30-11-2017 14:15:53.413 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+30-11-2017 14:15:53.415 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+30-11-2017 14:15:53.417 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+30-11-2017 14:15:53.418 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+30-11-2017 14:15:53.419 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+30-11-2017 14:15:53.420 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+30-11-2017 14:15:54.303 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+30-11-2017 14:15:54.323 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+30-11-2017 14:15:54.525 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+30-11-2017 14:15:54.528 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+30-11-2017 14:15:54.531 [main] INFO  org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+30-11-2017 14:15:54.617 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+30-11-2017 14:15:54.807 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+30-11-2017 14:15:55.221 [main] INFO  org.hibernate.tuple.PojoInstantiator.<init> - HHH000182: No default (no-argument) constructor for class: com.phoenix.md5reader.model.MD5Entity (class must be instantiated by Interceptor)
+30-11-2017 14:15:55.304 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+30-11-2017 14:15:55.470 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+30-11-2017 14:15:56.433 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/uploadFile],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.phoenix.md5reader.controller.MD5Controller.uploadDocFile(org.springframework.web.multipart.MultipartFile)
+30-11-2017 14:15:56.439 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/checkExisting],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.phoenix.md5reader.controller.MD5Controller.checkExisting(java.lang.String...)
+30-11-2017 14:15:56.441 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+30-11-2017 14:15:56.447 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+30-11-2017 14:15:56.448 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+30-11-2017 14:15:56.450 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+30-11-2017 14:15:56.454 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+30-11-2017 14:15:56.455 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+30-11-2017 14:15:56.877 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@778d1062: startup date [Thu Nov 30 14:15:49 IST 2017]; root of context hierarchy
+30-11-2017 14:15:56.952 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+30-11-2017 14:15:56.952 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+30-11-2017 14:15:57.002 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+30-11-2017 14:15:57.503 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+30-11-2017 14:15:57.521 [main] INFO  o.s.c.s.DefaultLifecycleProcessor.start - Starting beans in phase 2147483647
+30-11-2017 14:15:57.522 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+30-11-2017 14:15:57.556 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+30-11-2017 14:15:57.573 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+30-11-2017 14:15:57.941 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8080 (http)
+30-11-2017 14:15:57.953 [main] INFO  c.p.m.PhoenixMd5ReaderApplication.logStarted - Started PhoenixMd5ReaderApplication in 8.811 seconds (JVM running for 9.778)
+30-11-2017 14:16:05.790 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+30-11-2017 14:16:05.790 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+30-11-2017 14:16:05.810 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+30-11-2017 14:16:39.088 [http-nio-8080-exec-7] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - SQL Error: 1062, SQLState: 23000
+30-11-2017 14:16:39.089 [http-nio-8080-exec-7] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - Duplicate entry '655EB63BBBE01EEED093CB22BB8F5ACD' for key 'UK_djj9vo4l065v6t7jv8oord9tj'
+30-11-2017 14:16:39.165 [http-nio-8080-exec-7] ERROR c.p.m.services.MD5ServiceImpl.saveData - Caught Exception at : 655EB63BBBE01EEED093CB22BB8F5ACD
+30-11-2017 14:16:39.219 [http-nio-8080-exec-7] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - SQL Error: 1062, SQLState: 23000
+30-11-2017 14:16:39.220 [http-nio-8080-exec-7] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - Duplicate entry '995EB63BBBE01EEED093CB22BB8F5ACD' for key 'UK_djj9vo4l065v6t7jv8oord9tj'
+30-11-2017 14:16:39.251 [http-nio-8080-exec-7] ERROR c.p.m.services.MD5ServiceImpl.saveData - Caught Exception at : 995EB63BBBE01EEED093CB22BB8F5ACD
+30-11-2017 14:16:39.254 [http-nio-8080-exec-7] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - SQL Error: 1062, SQLState: 23000
+30-11-2017 14:16:39.255 [http-nio-8080-exec-7] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - Duplicate entry 'asdsa5EB63BBBE01EEED093CB22BB8F5A' for key 'UK_djj9vo4l065v6t7jv8oord9tj'
+30-11-2017 14:16:39.285 [http-nio-8080-exec-7] ERROR c.p.m.services.MD5ServiceImpl.saveData - Caught Exception at : asdsa5EB63BBBE01EEED093CB22BB8F5A
+30-11-2017 14:16:39.287 [http-nio-8080-exec-7] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - SQL Error: 1062, SQLState: 23000
+30-11-2017 14:16:39.288 [http-nio-8080-exec-7] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - Duplicate entry '5EB63BBBE01EEED093CB22BB8F5ACDC3' for key 'UK_djj9vo4l065v6t7jv8oord9tj'
+30-11-2017 14:16:39.318 [http-nio-8080-exec-7] ERROR c.p.m.services.MD5ServiceImpl.saveData - Caught Exception at : 5EB63BBBE01EEED093CB22BB8F5ACDC3
+30-11-2017 14:16:39.322 [http-nio-8080-exec-7] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - SQL Error: 1062, SQLState: 23000
+30-11-2017 14:16:39.323 [http-nio-8080-exec-7] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - Duplicate entry '2315EB63BBBE01EEED093CB22BB8F5AC' for key 'UK_djj9vo4l065v6t7jv8oord9tj'
+30-11-2017 14:16:39.400 [http-nio-8080-exec-7] ERROR c.p.m.services.MD5ServiceImpl.saveData - Caught Exception at : 2315EB63BBBE01EEED093CB22BB8F5AC
+30-11-2017 14:16:39.402 [http-nio-8080-exec-7] WARN  o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - SQL Error: 1062, SQLState: 23000
+30-11-2017 14:16:39.403 [http-nio-8080-exec-7] ERROR o.h.e.jdbc.spi.SqlExceptionHelper.logExceptions - Duplicate entry 'dsadadasfgaes5EB63BBBE01EEED093CB2' for key 'UK_djj9vo4l065v6t7jv8oord9tj'
+30-11-2017 14:16:39.433 [http-nio-8080-exec-7] ERROR c.p.m.services.MD5ServiceImpl.saveData - Caught Exception at : dsadadasfgaes5EB63BBBE01EEED093CB2
+30-11-2017 14:17:11.812 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+30-11-2017 14:17:11.813 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@778d1062: startup date [Thu Nov 30 14:15:49 IST 2017]; root of context hierarchy
+30-11-2017 14:17:11.816 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 2147483647
+30-11-2017 14:17:11.817 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+30-11-2017 14:17:11.821 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+30-11-2017 14:17:13.583 [main] INFO  c.p.m.PhoenixMd5ReaderApplication.logStarting - Starting PhoenixMd5ReaderApplication on ags-d-130 with PID 31280 (/home/ags/Documents/Vishal/Workspace/PhoenixMD5Reader/target/classes started by ags in /home/ags/Documents/Vishal/Workspace/PhoenixMD5Reader)
+30-11-2017 14:17:13.592 [main] INFO  c.p.m.PhoenixMd5ReaderApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+30-11-2017 14:17:13.670 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@778d1062: startup date [Thu Nov 30 14:17:13 IST 2017]; root of context hierarchy
+30-11-2017 14:17:15.511 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$73073529] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+30-11-2017 14:17:15.548 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+30-11-2017 14:17:15.591 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ce6f702a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+30-11-2017 14:17:16.125 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+30-11-2017 14:17:16.143 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+30-11-2017 14:17:16.145 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+30-11-2017 14:17:16.336 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+30-11-2017 14:17:16.337 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 2671 ms
+30-11-2017 14:17:16.508 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+30-11-2017 14:17:16.510 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+30-11-2017 14:17:16.516 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+30-11-2017 14:17:16.518 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+30-11-2017 14:17:16.518 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+30-11-2017 14:17:16.518 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+30-11-2017 14:17:17.234 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+30-11-2017 14:17:17.251 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+30-11-2017 14:17:17.477 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+30-11-2017 14:17:17.479 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+30-11-2017 14:17:17.482 [main] INFO  org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+30-11-2017 14:17:17.528 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+30-11-2017 14:17:17.648 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+30-11-2017 14:17:18.115 [main] INFO  org.hibernate.tuple.PojoInstantiator.<init> - HHH000182: No default (no-argument) constructor for class: com.phoenix.md5reader.model.MD5Entity (class must be instantiated by Interceptor)
+30-11-2017 14:17:18.250 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate.execute - HHH000228: Running hbm2ddl schema update
+30-11-2017 14:17:18.286 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl.processGetTableResults - HHH000262: Table not found: md5
+30-11-2017 14:17:18.290 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl.processGetTableResults - HHH000262: Table not found: md5
+30-11-2017 14:17:19.453 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+30-11-2017 14:17:20.493 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/uploadFile],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.phoenix.md5reader.controller.MD5Controller.uploadDocFile(org.springframework.web.multipart.MultipartFile)
+30-11-2017 14:17:20.495 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/checkExisting],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.phoenix.md5reader.controller.MD5Controller.checkExisting(java.lang.String...)
+30-11-2017 14:17:20.496 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+30-11-2017 14:17:20.502 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+30-11-2017 14:17:20.504 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+30-11-2017 14:17:20.506 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+30-11-2017 14:17:20.511 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+30-11-2017 14:17:20.512 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+30-11-2017 14:17:20.959 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@778d1062: startup date [Thu Nov 30 14:17:13 IST 2017]; root of context hierarchy
+30-11-2017 14:17:21.048 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+30-11-2017 14:17:21.049 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+30-11-2017 14:17:21.101 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+30-11-2017 14:17:21.490 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+30-11-2017 14:17:21.502 [main] INFO  o.s.c.s.DefaultLifecycleProcessor.start - Starting beans in phase 2147483647
+30-11-2017 14:17:21.502 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+30-11-2017 14:17:21.525 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+30-11-2017 14:17:21.540 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+30-11-2017 14:17:21.724 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8080 (http)
+30-11-2017 14:17:21.730 [main] INFO  c.p.m.PhoenixMd5ReaderApplication.logStarted - Started PhoenixMd5ReaderApplication in 8.547 seconds (JVM running for 9.138)
+30-11-2017 14:17:27.375 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+30-11-2017 14:17:27.376 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+30-11-2017 14:17:27.398 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+30-11-2017 14:18:19.087 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+30-11-2017 14:18:19.088 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.doClose - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@778d1062: startup date [Thu Nov 30 14:17:13 IST 2017]; root of context hierarchy
+30-11-2017 14:18:19.091 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.c.s.DefaultLifecycleProcessor.stop - Stopping beans in phase 2147483647
+30-11-2017 14:18:19.093 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.j.e.a.AnnotationMBeanExporter.destroy - Unregistering JMX-exposed beans on shutdown
+30-11-2017 14:18:19.103 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy - Closing JPA EntityManagerFactory for persistence unit 'default'
+30-11-2017 14:18:20.472 [main] INFO  c.p.m.PhoenixMd5ReaderApplication.logStarting - Starting PhoenixMd5ReaderApplication on ags-d-130 with PID 31364 (/home/ags/Documents/Vishal/Workspace/PhoenixMD5Reader/target/classes started by ags in /home/ags/Documents/Vishal/Workspace/PhoenixMD5Reader)
+30-11-2017 14:18:20.475 [main] INFO  c.p.m.PhoenixMd5ReaderApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+30-11-2017 14:18:20.550 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@778d1062: startup date [Thu Nov 30 14:18:20 IST 2017]; root of context hierarchy
+30-11-2017 14:18:22.287 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$7944b53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+30-11-2017 14:18:22.328 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+30-11-2017 14:18:22.386 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$62fc8654] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+30-11-2017 14:18:22.918 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+30-11-2017 14:18:22.936 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+30-11-2017 14:18:22.938 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+30-11-2017 14:18:23.074 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+30-11-2017 14:18:23.075 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 2529 ms
+30-11-2017 14:18:23.240 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+30-11-2017 14:18:23.242 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+30-11-2017 14:18:23.247 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+30-11-2017 14:18:23.249 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+30-11-2017 14:18:23.252 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+30-11-2017 14:18:23.253 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+30-11-2017 14:18:24.036 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+30-11-2017 14:18:24.062 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+30-11-2017 14:18:24.291 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+30-11-2017 14:18:24.293 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+30-11-2017 14:18:24.296 [main] INFO  org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+30-11-2017 14:18:24.354 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+30-11-2017 14:18:24.514 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+30-11-2017 14:18:24.896 [main] INFO  org.hibernate.tuple.PojoInstantiator.<init> - HHH000182: No default (no-argument) constructor for class: com.phoenix.md5reader.model.MD5Entity (class must be instantiated by Interceptor)
+30-11-2017 14:18:25.011 [main] INFO  o.h.tool.hbm2ddl.SchemaValidator.validate - HHH000229: Running schema validator
+30-11-2017 14:18:25.025 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl.processGetTableResults - HHH000262: Table not found: md5
+30-11-2017 14:18:25.027 [main] INFO  o.h.t.s.e.i.InformationExtractorJdbcDatabaseMetaDataImpl.processGetTableResults - HHH000262: Table not found: md5
+30-11-2017 14:18:25.029 [main] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.refresh - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+30-11-2017 14:18:25.033 [main] INFO  o.a.catalina.core.StandardService.log - Stopping service [Tomcat]
+30-11-2017 14:18:25.049 [main] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer.logAutoConfigurationReport - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+30-11-2017 14:18:25.118 [main] ERROR o.s.boot.SpringApplication.reportFailure - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaAutoConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1078)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:857)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.phoenix.md5reader.PhoenixMd5ReaderApplication.main(PhoenixMd5ReaderApplication.java:21)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.persistenceException(EntityManagerFactoryBuilderImpl.java:954)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:882)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:60)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:353)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:370)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:359)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 16 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [md5]
+	at org.hibernate.tool.schema.internal.SchemaValidatorImpl.validateTable(SchemaValidatorImpl.java:67)
+	at org.hibernate.tool.schema.internal.SchemaValidatorImpl.doValidation(SchemaValidatorImpl.java:50)
+	at org.hibernate.tool.hbm2ddl.SchemaValidator.validate(SchemaValidator.java:91)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:475)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:444)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:879)
+	... 22 common frames omitted
+30-11-2017 14:19:30.841 [main] INFO  c.p.m.PhoenixMd5ReaderApplication.logStarting - Starting PhoenixMd5ReaderApplication on ags-d-130 with PID 31417 (/home/ags/Documents/Vishal/Workspace/PhoenixMD5Reader/target/classes started by ags in /home/ags/Documents/Vishal/Workspace/PhoenixMD5Reader)
+30-11-2017 14:19:30.845 [main] INFO  c.p.m.PhoenixMd5ReaderApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+30-11-2017 14:19:30.911 [main] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext.prepareRefresh - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@778d1062: startup date [Thu Nov 30 14:19:30 IST 2017]; root of context hierarchy
+30-11-2017 14:19:32.616 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$71068535] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+30-11-2017 14:19:32.656 [main] INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping.afterPropertiesSet - Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+30-11-2017 14:19:32.705 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker.postProcessAfterInitialization - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cc6ec036] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+30-11-2017 14:19:33.150 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.initialize - Tomcat initialized with port(s): 8080 (http)
+30-11-2017 14:19:33.165 [main] INFO  o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+30-11-2017 14:19:33.167 [main] INFO  o.a.catalina.core.StandardEngine.log - Starting Servlet Engine: Apache Tomcat/8.5.23
+30-11-2017 14:19:33.291 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+30-11-2017 14:19:33.292 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader.prepareEmbeddedWebApplicationContext - Root WebApplicationContext: initialization completed in 2384 ms
+30-11-2017 14:19:33.478 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'dispatcherServlet' to [/]
+30-11-2017 14:19:33.480 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean.onStartup - Mapping servlet: 'messageDispatcherServlet' to [/services/*]
+30-11-2017 14:19:33.484 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'characterEncodingFilter' to: [/*]
+30-11-2017 14:19:33.485 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+30-11-2017 14:19:33.486 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+30-11-2017 14:19:33.486 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean.configure - Mapping filter: 'requestContextFilter' to: [/*]
+30-11-2017 14:19:34.337 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory - Building JPA container EntityManagerFactory for persistence unit 'default'
+30-11-2017 14:19:34.353 [main] INFO  o.h.jpa.internal.util.LogHelper.logPersistenceUnitInformation - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+30-11-2017 14:19:34.544 [main] INFO  org.hibernate.Version.logVersion - HHH000412: Hibernate Core {5.0.12.Final}
+30-11-2017 14:19:34.547 [main] INFO  org.hibernate.cfg.Environment.<clinit> - HHH000206: hibernate.properties not found
+30-11-2017 14:19:34.549 [main] INFO  org.hibernate.cfg.Environment.buildBytecodeProvider - HHH000021: Bytecode provider name : javassist
+30-11-2017 14:19:34.609 [main] INFO  o.h.annotations.common.Version.<clinit> - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+30-11-2017 14:19:34.786 [main] INFO  org.hibernate.dialect.Dialect.<init> - HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+30-11-2017 14:19:35.211 [main] INFO  org.hibernate.tuple.PojoInstantiator.<init> - HHH000182: No default (no-argument) constructor for class: com.phoenix.md5reader.model.MD5Entity (class must be instantiated by Interceptor)
+30-11-2017 14:19:35.338 [main] INFO  o.h.tool.hbm2ddl.SchemaValidator.validate - HHH000229: Running schema validator
+30-11-2017 14:19:35.469 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory - Initialized JPA EntityManagerFactory for persistence unit 'default'
+30-11-2017 14:19:36.404 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/uploadFile],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.phoenix.md5reader.controller.MD5Controller.uploadDocFile(org.springframework.web.multipart.MultipartFile)
+30-11-2017 14:19:36.406 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/checkExisting],methods=[POST]}" onto public org.springframework.http.ResponseEntity<?> com.phoenix.md5reader.controller.MD5Controller.checkExisting(java.lang.String...)
+30-11-2017 14:19:36.408 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+30-11-2017 14:19:36.414 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+30-11-2017 14:19:36.416 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+30-11-2017 14:19:36.417 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+30-11-2017 14:19:36.422 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+30-11-2017 14:19:36.423 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping.register - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+30-11-2017 14:19:36.889 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter.initControllerAdviceCache - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@778d1062: startup date [Thu Nov 30 14:19:30 IST 2017]; root of context hierarchy
+30-11-2017 14:19:36.966 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+30-11-2017 14:19:36.967 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+30-11-2017 14:19:37.028 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping.registerHandler - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+30-11-2017 14:19:37.434 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter.afterSingletonsInstantiated - Registering beans for JMX exposure on startup
+30-11-2017 14:19:37.446 [main] INFO  o.s.c.s.DefaultLifecycleProcessor.start - Starting beans in phase 2147483647
+30-11-2017 14:19:37.446 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Context refreshed
+30-11-2017 14:19:37.471 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper.start - Found 1 custom documentation plugin(s)
+30-11-2017 14:19:37.487 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner.scan - Scanning for api listing references
+30-11-2017 14:19:37.680 [main] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer.start - Tomcat started on port(s): 8080 (http)
+30-11-2017 14:19:37.688 [main] INFO  c.p.m.PhoenixMd5ReaderApplication.logStarted - Started PhoenixMd5ReaderApplication in 7.151 seconds (JVM running for 7.649)
+30-11-2017 14:20:10.732 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring FrameworkServlet 'dispatcherServlet'
+30-11-2017 14:20:10.732 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization started
+30-11-2017 14:20:10.749 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet.initServletBean - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms

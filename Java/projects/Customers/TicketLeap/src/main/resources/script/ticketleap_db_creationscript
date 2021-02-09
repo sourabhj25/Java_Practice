@@ -1,0 +1,20 @@
+1. use ticketleap;
+2. db.createUser({
+	user: "vishal",
+	pwd: "password",
+	roles: [
+	{ 
+	  role: "readWrite", 
+          db: "ticketleap" 
+	} ]
+});
+
+3. 
+db.createCollection("user")
+db.createCollection("event")
+db.createCollection("partner")
+db.createCollection("organization")
+
+
+# add partner
+db.getCollection('partner').insert({ 'partnerName' : 'Amazon.com' })

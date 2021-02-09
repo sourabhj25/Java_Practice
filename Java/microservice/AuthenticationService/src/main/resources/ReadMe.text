@@ -1,0 +1,100 @@
+AuthenticationService:
+-----------------------
+1)Create Database: client
+
+2)Import database dump provided in below
+  AuthenticationService/MySQL/Databas_DDL_DML.sql
+
+3)Build project
+       a)Go to dir AuthenticationService
+       b)mvn clean install
+       c)target folder will be generate inside AuthenticationService
+       d)Deployed jar generated file on 8881 port below commands
+	      sudo nohup java -Dserver.port=8881 -jar target/AuthenticationService-0.0.1.jar > out.log &
+
+	   Note: Command to kill the above port,
+	  	 sudo kill -9 $(ps -fA | grep 'port=8881' | awk '{print $2}' )
+       e)Once authentication service is up and running you are ready to access microservices with provided accesskey and client key
+	   Note: 
+		1)To do the same follow the MicroServiceConsume steps
+	   	2)All Microservice api's can be accessed with swagger tool by the following url,
+			http://localhost:8881/swagger-ui.html
+
+4)Register client with register client api,
+  	Example:
+		{
+		  "email": "rupeshb@yopmail.com",
+		  "fistName": "Rupesh",
+		  "lastName": "Bharuka",
+		  "password": "Rupesh123",
+		  "securityType": 1,
+		  "userName": "rupesh"
+		}
+
+		Note: You will get the response in json format along with the access and secret key as given below,
+
+		{
+		  "response_code": 200,
+		  "response_message": "Your account register successfully",
+		  "response_body": {
+		    "userName": "rupesh",
+		    "accessKey": "2e4cca91-a500-44fa-96af-0cb72e1dae06",
+		    "secretKey": "89dODnezM5"
+		  }
+		}
+
+=================================================================================================================================================
+
+MicroServiceConsume:
+--------------------
+1)Go to project MicroServiceConsume
+
+2)Configure your access key and secreate key in application.properties file as given below,
+	Path : /MicroServiceConsume/src/main/resources/application.properties
+	Example:	
+		microservice.secret.key=89dODnezM5
+		microservice.accessKey=2e4cca91-a500-44fa-96af-0cb72e1dae06
+
+3)Update AuthenticationService endpoint in application.properties file if required,
+	Example:	
+		microservice.user.registration.endpoint=http://localhost:8881/user/registration
+		microservice.login.endpoint=http://localhost:8881/login	
+	
+4)Build and run you project
+
+5)Register the user in the following way,
+    Example:
+	// Registering the user for client by passing json,
+	{
+	  "email": "jhon@yopmail.com",
+	  "firstName": "Jhon",
+	  "lastName": "Cena",
+	  "password": "jhon123",
+	  "username": "Jhon"
+	}
+
+	Note: You will get an activation email to activate your account
+
+6)Login with the registered user,
+    Example:
+	// login with the registered user
+	{
+	  "password": "jhon123",
+	  "username": "Jhon"
+	}
+
+	//Response of login 
+	{
+	  "response_code": 200,
+	  "response_message": "Login successfully",
+	  "response_body": {
+	    "username": "Jhon",
+	    "firstName": "Jhon",
+	    "lastName": "Cena",
+	    "email": "jhon@yopmail.com",
+	    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJKaG9uIiwiY3JlYXRlZCI6MTUyNDc0NjczMzg1M30.D5JOxaNEOIF6fIhw-rz6Wv-_px_jCKoTs_yX2pNbdph3g4cJTw_EMeAG6c9NR-ii7OLT8QtMZoYxAjcUMRW1Tg"
+	  }
+	}
+6)Activate the account by clicking on the link in email and login with the login api
+
+7)Login api will give you authentication token by JWT

@@ -1,0 +1,73 @@
+.loginForm{
+    float:center;
+}
+.wrapper {
+    position: relative;
+    z-index: 7;
+}
+#footer {
+    background: #e1e1e1;
+    color: #41413f;
+    padding: 25px 0;
+    text-align: center;
+}
+.page {
+    color: #505050;
+    /* height: 800px; */
+    background: '/src/assets/Cool-Wallpaper-for-iPad-1920x1080.jpg-2.jpeg';
+    background-size: 2000px auto;
+    background-position: top left;
+    position: relative;
+    min-height:1000px;
+    width:100%
+}
+.content-container {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    margin: auto;
+    position: relative;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+.box-header {
+    color: #fff;
+    font-family: "museo-sans",arial,sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    margin: auto;
+    text-align: center;
+   
+        padding: 50px 15px 35px;
+        text-transform: uppercase;
+        max-width: 645px;
+    
+}
+.signin-form-container {
+    padding: 40px 40px 30px;
+    /* background: transparent !important;
+    border: 0px transparent !important; */
+}
+.home-form-container {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 645px;
+    max-width: 96%;
+    margin: auto auto 0;
+    padding: 40px 40px 30px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 2px rgba(221,221,221,0.3);
+}
+.loginbutton{
+    background-color:#e0336b;
+}
+#divSmallBoxes {
+    /* position: fixed; */
+    right: 10px;
+    top: 52px;
+    z-index: 9999;
+    display: none
+}

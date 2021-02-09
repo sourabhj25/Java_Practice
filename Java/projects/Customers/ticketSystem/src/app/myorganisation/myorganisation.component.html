@@ -1,0 +1,179 @@
+<app-navbar></app-navbar>
+<!-- <div id="divSmallBoxes">
+  <div id="smallbox4" class="SmallBox animated fadeInRight fast" style="background-color: rgb(115, 158, 115);padding: 10px;height: 50px;">
+      <div class="textoFull"><span style="color:white;font-size: 20px;">Login Successfully!</span></div>
+      
+      </div>
+      
+      
+  </div>
+
+  <div id="orgList" style="background-color: rgb(228, 247, 228);padding: 10px;height: 50px;text-align:center;float:center;">
+    <div class="textoFull"><span *ngIf="alertError" style="color:black;font-size: 20px;">{{alertMessage}}</span></div>
+    <div class="textoFull"><span *ngIf="!alertError" style="color:black;font-size: 20px;">{{alertMessage}}</span></div>
+    
+  </div>
+
+  <div id="divSmallBoxes">    
+  <div id="orgModal" style="background-color: rgb(228, 247, 228);padding: 10px;height: 50px;text-align:center;float:center;">
+    <div class="textoFull"><span *ngIf="orgmodalflag" style="color:black;font-size: 20px;">Organisation Added Successfully !!</span></div>
+  </div>
+  </div> -->
+
+
+
+<div class="section" style="margin-top: -20px;">
+  <div class="container top-nav">
+    <label class="heading-top">My Organisations</label>
+  </div>
+</div>
+<div class="tbl">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="organisationButton">
+                <button [disabled]="!roleFlag" class="primary-button" (click)="organisationModal()">CREATE AN ORGANISATION</button>
+                <br>
+              <!-- <button mat-raised-button [disabled]="!roleFlag" (click)="organisationModal()">CREATE AN ORGANISATION</button> -->
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="search">
+              <input style="padding:7px;border-radius: 9px" type="text" placeholder="search" [(ngModel)]="organisationData">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4"></div>
+    </div>
+  </div>
+
+  <div class="row orgTable">
+    <div class="col-lg-12">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4">
+        <div class="row">
+          <table class="table">
+            <thead style="text-align:center">
+              <tr>
+                <th>OrganisationName</th>
+                <th>OrganisationUrl</th>
+                <th>Events</th>
+                <th>User</th>
+              </tr>
+            </thead>
+            <tbody class="orgTbody">
+              <tr *ngFor="let data of orgdata | search:organisationData | paginate: {itemsPerPage: 5, currentPage:pageCurrent, id: '1'}">
+                <td> {{data.organisationName}} </td>
+                <td>
+                 <a href="http://{{data.organisationUrl}}/#/event/list">{{data.organisationUrl}}</a>
+                </td>
+                <!-- events/test_12345/5a5c6e8adf153e1de9f045d9 -->
+                <td>
+                    <a style="color:rgb(117, 18, 34);cursor:pointer" 
+                    href="http://{{data.organisationUrl}}/#/events/{{data.organisationName}}/{{data.organisationId}}">view</a>
+                    
+                </td>
+                <!-- <td (click)="viewEvent(data.organisationName,data.organisationId)">
+                  <a style="color:rgb(117, 18, 34);cursor:pointer">view</a>
+                </td> -->
+                <td (click)="viewUser(data.organisationName,data.organisationId)">
+                  <a style="color:rgb(117, 18, 34);cursor:pointer">view</a>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="12" class="text-center">
+                  <pagination-controls (pageChange)="pageCurrent = $event" id="1" maxSize="10" directionLinks="true" autoHide="true"></pagination-controls>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <div class="col-lg-4"></div>
+    </div>
+  </div>
+</div>
+
+
+<h1>
+    {{title}}
+  </h1>
+  
+  <!-- <mat-form-field>
+      <input type="text" matInput >
+   </mat-form-field> -->
+
+   <!-- <mat-autocomplete class="selectDropdown" >
+      <mat-select placeholder="select" style="width:150px;">
+      <mat-option *ngFor="let option of items" [value]="option" style="width:50px;">
+         {{ option }}
+      </mat-option>
+      </mat-select>
+   </mat-autocomplete> -->
+
+  <!-- <mat-form-field>
+    <input matInput placeholder="Simple Input" [(ngModel)]="title">
+  </mat-form-field>
+  
+  <mat-icon>home</mat-icon>
+  
+  <button mat-raised-button>I'm a button</button>
+  
+  <mat-form-field>
+    <mat-select placeholder="I'm a select" [(ngModel)]="selectedValue">
+      <mat-option *ngFor="let item of items" [value]="item.value">
+        {{item}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field> -->
+
+<!-- organisationModal -->
+<div bsModal #orgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form #f="ngForm" (ngSubmit)="submit(org.value, webAddr.value,domain.value)">
+        <div class="modal-header">
+          <button (click)="orgModal.hide()" aria-label="Close" class="close" type="button">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 class="modal-title text-xs-center">Create an Organisation</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-4">
+              <label>
+                <b>Organization Name</b>
+              </label>
+            </div>
+            <div class="col-lg-8">
+              <input type="text" #org/>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-lg-4">
+              <label>
+                <b>Web address</b>
+              </label>
+            </div>
+            <div class="col-lg-8">               
+              <input type="text" #webAddr/>
+              <input type="text" #domain value="trackwayz.com">
+              <!-- <input type="text" [disabled]="web" value="amazon.com"/> -->
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Create an Organisation</button>
+          <button type="button" (click)="orgModal.hide()" class="btn btn-danger">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+<app-navbar></app-navbar>
+
+<!-- <p>
+    Parent:<app-end-user-events [eventname]=" myevent"></app-end-user-events>
+</p> -->
+<div class="section" style="margin-top: -20px;">
+    <div class="container top-nav">
+    </div>
+</div>
+
+<div class="section" style="margin-top: 0px;background-color:white">
+    <div class="container top-nav">
+        <div>
+            <div class="heading-top">Upcoming Events</div>
+            <div class="heading-bottom">{{eventName}}</div>
+
+        </div>
+        <div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+
+    <table class="table">
+        <thead>
+            <tr>
+
+
+            </tr>
+        </thead>
+        <tbody class="tbody">
+            <tr *ngFor="let data of eData">
+                <td>
+
+                    <div class="row card-holder" style="margin-top:20px;">
+                        <div class="col-xs-12 col-sm-6 col-md-4 card">
+                            <div class="card-container" style="margin-left: 234px;margin-top:26px;">
+                                <div class="container">
+                                    <div class="col-sm-2">
+                                        <div class="img" style="background-image:url('/assets/backgrnd.jpeg')">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="eventName">{{data.eventName}}</div>
+                                        <div class="description">{{data.description}}</div>
+                                        <button (click)="register(data.eventName,data.eventID)" class="btn btn-success">Register</button>
+                                        <!-- <button (click)="buyTicket(data.eventName,data.eventID)" class="btn btn-grey">Buy Ticket</button> -->
+                                        
+                                    </div>
+
+                                    <div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

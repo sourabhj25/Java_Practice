@@ -1,0 +1,69 @@
+<!-- <div class="row">
+  <div class="col-md-12">
+    <p>Click below to view your ticket details</p>
+      <label for="name">Name : Shekhar Choudhari</label>
+      <label for="date">Date : 11 Jan 2018</label>
+      <label for="Quantity">Quantity: 1</label>
+      <button class="btn btn-primary" (click)="onClick()">Show Ticket</button>  [hidden]="IsHidden"
+</div>
+</div> -->
+
+
+<div class="row" style="padding-top:24px;">
+  <div class="col-lg-4 col-md-4">
+
+  </div>
+  <div class="col-lg-4 col-md-4">
+      <div class="row">
+          <table class="table">
+              <thead style="text-align:center">
+                <tr>
+                  <th>Name</th>
+                  <th>Date</th>
+                  <th>Quantity</th>
+                </tr>
+              </thead>
+                 
+              <tbody>
+                  <tr>
+                    <td>Shekhar Choudhari  </td>
+                    <td>  11 Jan 2018 </td>
+                    <td> 1 </td>
+                  </tr>
+                </tbody>
+               </table>
+
+               <table>
+              <tbody>
+                  <tr>
+                      <td> <ngx-qrcode [qrc-element-type]="elementType" [qrc-value] = "barCodeValue">
+                      </ngx-qrcode>  </td>
+                      <td>  <h1 class="settitle">
+                        {{eventName}}
+                      </h1>   <ngx-barcode [bc-value]="value" [bc-display-value]="true"></ngx-barcode> </td>
+                      
+                    </tr>
+                  </tbody>
+                 
+            
+             
+            </table>
+      </div>
+
+      <div class="row">
+          <button class="btn btn-primary" (click)="register()">Register</button>  
+        </div>
+        </div><div class="col-lg-4 col-md-4">
+            
+              </div>
+  
+</div>
+<!-- <div class="row"  id="viewTickets">
+  <div class="col-md-12">
+     
+     
+     
+
+  </div>
+</div> -->
+

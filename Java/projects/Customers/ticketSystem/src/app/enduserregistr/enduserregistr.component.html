@@ -1,0 +1,74 @@
+
+
+<div class="section" style="margin-top: -20px;">
+    <div class="container top-nav">
+      <label class="heading-top">End User Registration</label>
+    </div>
+  </div>
+  
+  <div class="row" style="margin-top:50px;">
+    <div class="col-lg-12">
+
+        <div class="col-lg-4"></div>
+
+            <div class="col-lg-3">
+                <div class="loginForm">    
+                    <form (ngSubmit)="endUserRegistration(name.value ,email.value,password)">
+                      
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Name</label>
+                                        <input type="email" #name class="form-control"  aria-describedby="emailHelp" placeholder="Enter name">
+                                </div>
+                             </div>
+                      
+                     
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                        <input type="email" #email class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                             </div>
+                      
+                                                
+                     
+                            <div class="row">
+                                <div class="form-group">
+                                   <label >Password</label>
+                                   <input type="password" class="form-control" id="newPassword"  
+                                   name="newPassword" minlength="6" maxlength="100"  required [(ngModel)]="newPassword"  placeholder="Enter password">
+                            </div>
+                            </div>
+                       
+
+                       
+                                <div class="row">
+                                    <div class="form-group">
+                                       <label>Confirm Password</label>
+                                       <input type="password" class="form-control" id="confirmPassword" minlength="6" maxlength="100"  placeholder="Enter Confirm password"  name="confirmPassword" required [(ngModel)]="confirmPassword">
+                                    </div>
+                                    <span *ngIf="!(newPassword==confirmPassword)" style="color:red;padding-left: 18px;">The password and confirmation password do not match.</span>
+                                    
+                            </div>
+                        
+
+                            <button *ngIf="login"  type="submit" class="btn btn-primary">Login</button>
+                            
+                        <button *ngIf="!login"  type="submit" class="btn btn-primary">Register</button>
+                    </form>
+                </div>
+            </div>
+<!-- 
+        <div class="col-lg-4" *ngIf="message" >
+          <div id="divSmallBoxes">
+              <div id="smallbox4" class="SmallBox animated fadeInRight fast" style="background-color: rgb(115, 158, 115);padding: 20px;height: 90px;">
+                  <div class="textoFull"><span style="color:white;font-size: 20px;">Success!</span>
+                    <p style="color:white">{{alert}}</p></div>
+                 
+                  </div>
+              </div>
+        </div> -->
+    </div>
+  </div> 
+  
+  

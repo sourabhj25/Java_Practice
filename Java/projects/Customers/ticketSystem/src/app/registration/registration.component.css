@@ -1,0 +1,17 @@
+.heading-top{
+    padding-top: 60px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.section{
+    height: 100px;
+    background: #ededed;
+}
+
+#divSmallBoxes {
+    position: fixed;
+    right: 10px;
+    top: 52px;
+    z-index: 9999;
+    display: none
+}

@@ -1,0 +1,81 @@
+<div class="wrapper ">
+    <div class="page" style="background-image:url('/assets/backgrnd.jpeg')">
+        <div class="content-container">
+            <div class="box-header">
+                 <span class="fancy-wisdom-font">Welcome Back</span><br> SIGN IN TO MANAGE YOUR EVENTS
+            </div>
+
+    <div id="signin-form-node" class="signin-form-container home-form-container signin">
+        <form method="post" action="" class="signin-form home-form">
+            <input type="hidden" name="csrfmiddlewaretoken" value="Eo3FvcF9Us1LwC2Xaz63Y7dsoBFDLWrR">               
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="col-lg-3"></div>
+                        <div class="col-lg-7">
+                            <div class="loginForm">    
+                                <form (ngSubmit)="login(email.value,password.value)">
+                                 
+                                        <div class="row">
+                                                <div class="col-lg-12">
+                                                        
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                    <input type="email" #email class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                            </div>
+                                            </div>
+                                         </div>
+                                    
+                                                            
+                                  
+                                        <div class="row">
+                                                <div class="col-lg-12">
+                                                        
+                                            <div class="form-group">
+                                               <label for="exampleInputPassword1">Password</label>
+                                                   <input type="password" #password class="form-control" id="exampleInputPassword1" placeholder="Password">  </div>
+                                            </div>
+                                            </div>
+                                            <br>
+                                   <div class="row">
+                                    <div class="col-lg-12">
+                                            <button  type="submit" class="btn btn-primary btn-block loginbutton">Login</button> 
+                                            <!-- <label><span style="color:red;" *ngIf="!loginErrMessage">{{alertMessage}}</span></label>  -->
+                                            <!-- <label><span style="color:red;" *ngIf="loginErrMessage">Login Successful</span></label>                -->
+                                           
+                                           
+                                    </div>
+                                    
+                                   </div>
+                                   <div class="row" style="margin-top:15px">
+                                    <div id="divSmallBoxes">
+                                        <div *ngIf="!loginErrMessage" id="smallbox4" class="SmallBox animated fadeInRight fast" style="background-color:red;padding: 2px;height: 30px;">
+                                            <div class="textoFull"><span  style="color:white;font-size: 20px;"></span><p style="color:white">{{alertMessage}}</p></div>
+                                            
+                                            </div>
+                                            <div *ngIf="loginErrMessage" id="smallbox4" class="SmallBox animated fadeInRight fast" style="background-color:green;padding: 2px;height: 30px;">
+                                                <div class="textoFull"><span  style="color:white;font-size: 20px;"></span><p style="color:white">{{alertMessage}}</p></div>
+                                                
+                                            </div>
+                                        </div>
+                                   </div>
+                                   <!-- <div class="row" style="margin-top:10px;">
+                                    <angular4-notify-notifications-container ></angular4-notify-notifications-container>
+                                    
+                                   </div> -->
+                                </form>
+                            </div>
+                        </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div>           
+        </form>       
+    </div>
+   
+    
+   
+    
+    
+    
+                    </div>
+                </div>
+                    </div>
